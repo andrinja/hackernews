@@ -62,6 +62,10 @@ export const StyledObfuscator = styled.div<{ $isMenuOpen: boolean }>`
   transition: opacity ${MENU_TRANSITION_DURATION};
   opacity: ${(p) => (p.$isMenuOpen ? '1' : '0')};
   visibility: ${(p) => (p.$isMenuOpen ? 'visible' : 'hidden')};
+
+  ${device.sm} {
+    display: none;
+  }
 `;
 
 export const StyledLink = styled.a`
